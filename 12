@@ -1,0 +1,28 @@
+\documentclass{report}
+\usepackage{lipsum}
+\title{Simple Report}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\tableofcontents
+	
+	\chapter{Introduction}
+	   \lipsum[1]
+	
+	\chapter{Methods}
+	   \lipsum[2]
+
+	\chapter{Results}
+	   \lipsum[3]
+	
+	\chapter{Discussion}
+	   \lipsum[4]
+	
+	\chapter{Conclusion}
+         \lipsum[5]
+	
+\end{document}
