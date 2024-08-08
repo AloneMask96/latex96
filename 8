@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsthm}
+
+% Define theorem-like environments
+\newtheorem{theorem}{Theorem}[section] % Theorems numbered within sections
+\newtheorem{definition}[theorem]{Definition} % Definitions share numbering with theorems
+\newtheorem{corollary}[theorem]{Corollary} % Corollaries share numbering with theorems
+\newtheorem{lemma}[theorem]{Lemma} % Lemmas share numbering with theorems
+
+\begin{document}
+	
+	\section{Introduction}
+	
+	\begin{theorem}
+		Let f be a function whose derivative exists in every point, then
+f is a continuous function.
+	\end{theorem}
+	
+	\begin{theorem}
+	    (Pythagorean theorem). This is a theorem about right triangles
+and can be summarised in the next equation
+x2 + y2 = z2
+	\end{theorem}
+	
+	\begin{corollary}
+		This is a corollary.
+	\end{corollary}
+	
+	\begin{lemma}
+		This is a lemma.
+	\end{lemma}
+	
+\end{document}
