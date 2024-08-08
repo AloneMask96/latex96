@@ -1,21 +1,36 @@
-\documentclass{article}
-\usepackage{amsmath} % Required for mathematical environments and commands
-
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,nccmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \begin{document}
-	
-	\section*{Equations Set 1} % Section header for the first set of equations
-	
-	\begin{align} % Begin the align environment for multiple equations
-		x &= -b \pm \sqrt{\sqrt[4]{b^2 - 4ac}} \notag \\ % First equation with \notag to suppress numbering
-		x &= \frac{-b \pm \sqrt{22 - 4 \cdot 1 \cdot (-8)}}{2 \cdot 1} = \frac{-b \pm \sqrt{\sqrt{4 + 32}}}{2} = \frac{-b \pm \sqrt{2}}{2} \notag % Second equation with \notag to suppress numbering
-	\end{align} % End the align environment
-	
-	\section*{Equations Set 2} % Section header for the second set of equations
-	
-	\begin{align} % Begin the align environment for multiple equations
-		\varphi_{\sigma}^{\lambda} \cdot A_{t} &= \sum_{\pi \in C_{t}} \text{sgn}(\pi) \cdot \varphi_{\sigma}^{\lambda} \cdot \varphi_{\pi}^{\lambda} \notag \\ % First equation with \notag to suppress numbering
-		&= \sum_{\tau \in C_{\sigma}^{t}} \text{sgn}(\sigma^{-1} \tau \sigma) \varphi_{\sigma}^{\lambda} \varphi_{\sigma^{-1} \tau \sigma}^{\lambda} \notag \\ % Second equation with \notag to suppress numbering
-		&= A_{\sigma}^{t} \varphi_{\sigma}^{\lambda} \notag % Third equation with \notag to suppress numbering
-	\end{align} % End the align environment
-	
+\begin{center}
+\Large{\textbf{Equations in \LaTeX}}
+\end{center}
+\section*{Equation 1}
+%\begin{eqnarray}
+%x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+%= \frac{-2 \pm \sqrt{2^{2}-4*(1)*(-8)}}{2*1}
+%\end{eqnarray}
+\begin{fleqn}
+\[
+x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}
+\]
+\[ = \frac{-2 \pm \sqrt{2^{2}-4*(1)*(-8)}}{2*1}
+\]
+\[ = \frac{-2 \pm \sqrt{4+32}}{2}
+\]
+\end{fleqn}
+\section*{Equation 2}
+\begin{fleqn}
+\[
+\varphi^{\lambda}_{\sigma}A_{t} = \sum_{\pi \in C_{t}}
+sgn(\pi)\varphi^{\lambda}_{\sigma}\varphi^{\lambda}_{\pi}
+\]
+\[ = \sum_{\tau \in C_{\sigma t}} sgn(\sigma^{- 1}\tau\sigma)\varphi^{\lambda}_{\sigma}\varphi^{\lambda}_{\sigma^{-1}\tau\sigma}
+\]
+\[ = A_{\sigma t} \varphi^{\lambda}_{\sigma}
+\]
+\end{fleqn}
 \end{document}
